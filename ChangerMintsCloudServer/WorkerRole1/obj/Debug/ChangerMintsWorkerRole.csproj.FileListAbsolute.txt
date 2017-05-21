@@ -1,0 +1,157 @@
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+D:\PRASAD\CHANGER\CLOUD\ChangerMints\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+D:\MyCodes\CMints1\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.pdb
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.pdb
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.xml
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.pdb
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.pdb
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.xml
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+C:\Users\nipt\Desktop\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.xml
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.pdb
+C:\Users\Vamshi\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.xml
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\NFCTagEntityGenerator.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\NFCTagEntityGenerator.pdb
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.dll
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.pdb
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.pdb
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.xml
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.NFCEntitiesGenerator.dll
+D:\Changer Machines\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.NFCEntitiesGenerator.pdb
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.NFCEntitiesGenerator.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.pdb
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.pdb
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.xml
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\CM\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.NFCEntitiesGenerator.pdb
+D:\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+D:\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+D:\CM\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\WorkerRole1.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.NFCEntitiesGenerator.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\MonAgentListener.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Business.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.Database.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\EntityFramework.xml
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\log4net.xml
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\bin\Debug\ChangerMints.NFCEntitiesGenerator.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\obj\Debug\ChangerMintsWorkerRole.csprojResolveAssemblyReference.cache
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\WorkerRole1\obj\Debug\WorkerRole1.pdb

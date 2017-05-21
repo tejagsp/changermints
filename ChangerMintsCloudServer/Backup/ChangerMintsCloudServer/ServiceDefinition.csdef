@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="ChangerMintsCloudServer" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WorkerRole name="ChangerMintsWorkerRole" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <Endpoints>
+      <InputEndpoint name="ChangerMintsEndpoint" protocol="tcp" port="4545" />
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>

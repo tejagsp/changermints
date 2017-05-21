@@ -1,0 +1,18 @@
+D:\CM\ChangerMintsCloudServer\ChangerMintsCloudServer\bin\Debug\ServiceConfiguration.cscfg
+D:\CM\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsCloudServer.ccprojResolveAssemblyReference.cache
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\bin\Debug\ServiceConfiguration.cscfg
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\bin\Debug\ServiceDefinition.csdef
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\ChangerMints.Business.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\ChangerMints.Business.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\ChangerMints.Database.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\ChangerMints.Database.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\ChangerMints.NFCEntitiesGenerator.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\ChangerMints.NFCEntitiesGenerator.pdb
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\EntityFramework.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\log4net.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\Microsoft.WindowsAzure.StorageClient.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\MonAgentListener.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\WorkerRole1.dll
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\WorkerRole1.dll.config
+C:\Personal stuff\Codes\ChangerMintsCloudServer\ChangerMintsCloudServer\obj\Debug\ChangerMintsWorkerRole\WorkerRole1.pdb
