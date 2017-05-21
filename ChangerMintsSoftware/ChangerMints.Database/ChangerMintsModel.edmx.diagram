@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db48445c4c154a5799584daf271d5347" Name="Diagram1">
+        <EntityTypeShape EntityType="ChangerMintsModel.AddressProof" Width="1.5" PointX="6" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.Beneficiary" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ChangerBlockList" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ChangerUpdatedDetail" Width="1.5" PointX="11.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ChangerWrongNFCEntry" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.CustomerAccountDetail" Width="1.5" PointX="8.25" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.CustomerDetail" Width="1.5" PointX="6" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.CustomerNFCTagDetail" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.CustomerTransactionDetail" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.Log" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.LoginDetail" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.OTP" Width="1.5" PointX="5.25" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ShopKeeperAccountDetail" Width="1.5" PointX="5.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ShopKeeperAccountNumber" Width="1.5" PointX="3" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ShopKeeperDetail" Width="1.5" PointX="8.25" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ShopKeeperRechargeDetail" Width="1.5" PointX="5.25" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ShopKeeperSmartCardMaster" Width="1.5" PointX="8.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ShopKeeperTerminalDetail" Width="1.5" PointX="8.25" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.ShopKeeperTransactionDetail" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.Status" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.TransactionType" Width="1.5" PointX="3" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChangerMintsModel.UserPrivilege" Width="1.5" PointX="3.75" PointY="13.125" IsExpanded="true" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperDetails_AddressProof_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ChangerUpdatedDetails_CustomerDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ChangerUpdatedDetails_ShopKeeperAccountNumbers" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperUpdatedDetails_ShopKeeperAccountNumbers" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_CustomerAccountDetails_CustomerDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_CustomerDetails_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_CustomerDetails_UserPrivileges_PrivilegeID" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_CustomerNFCTagDetails_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_CustomerTransactionDetails_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_OTP_CustomerTransactionDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_OTP_ShopKeeperTransactionDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_OTP_TransactionTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperAccountDetails_ShopKeeperAccountNumbers" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK__ShopKeepe__ShopK__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK__ShopKeepe__ShopK__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperAccountNumbers_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperDetails_ShopKeeperAccountNumbers" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperSmartCardMaster_ShopKeeperAccountNumbers" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperTerminalDetails_ShopKeeperAccountNumbers" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperDetails_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperSmartCardMaster_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperTerminalDetails_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ChangerMintsModel.FK_ShopKeeperTransactionDetails_Status" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

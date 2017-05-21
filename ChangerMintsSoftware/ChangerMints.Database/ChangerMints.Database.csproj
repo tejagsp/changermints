@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C22514E-DDA8-40B5-A556-BF3CABBAB329}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChangerMints.Database</RootNamespace>
+    <AssemblyName>ChangerMints.Database</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressProof.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficiary.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChangerBlockList.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChangerMintsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangerMintsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChangerMintsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChangerMintsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangerMintsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangerUpdatedDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChangerWrongNFCEntry.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cm_sp_Get_Error_Info_Result.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAccountDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerNFCTagDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTransactionDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OTP.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopKeeperAccountDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopKeeperAccountNumber.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopKeeperDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopKeeperRechargeDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopKeeperSmartCardMaster.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopKeeperTerminalDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShopKeeperTransactionDetail.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionType.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnitofWork\IRepository.cs" />
+    <Compile Include="UnitofWork\IUnitOfWork.cs" />
+    <Compile Include="UnitofWork\Repository.cs" />
+    <Compile Include="UnitofWork\RepositoryQuery.cs" />
+    <Compile Include="UnitofWork\UnitOfWork.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserPrivilege.cs">
+      <DependentUpon>ChangerMintsModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="ChangerMintsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ChangerMintsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ChangerMintsModel.edmx.diagram">
+      <DependentUpon>ChangerMintsModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangerMintsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChangerMintsModel.edmx</DependentUpon>
+      <LastGenOutput>ChangerMintsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ChangerMintsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChangerMintsModel.edmx</DependentUpon>
+      <LastGenOutput>ChangerMintsModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

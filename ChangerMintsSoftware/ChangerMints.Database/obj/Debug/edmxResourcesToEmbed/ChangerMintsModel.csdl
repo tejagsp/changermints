@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChangerMintsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="AddressProof">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="AddressProof1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ShopKeeperDetails" Relationship="Self.FK_ShopKeeperDetails_AddressProof_ID" FromRole="AddressProof" ToRole="ShopKeeperDetails" />
+  </EntityType>
+  <EntityType Name="Beneficiary">
+    <Key>
+      <PropertyRef Name="SNo" />
+    </Key>
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BeneficiaryPhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BeneficiaryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TransferLimit" Type="Int32" />
+    <Property Name="SNo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="ChangerBlockList">
+    <Key>
+      <PropertyRef Name="MobileNumber" />
+    </Key>
+    <Property Name="MobileNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Blocked" Type="Boolean" Nullable="false" />
+    <Property Name="SemiBlocked" Type="Boolean" Nullable="false" />
+    <Property Name="Attempts" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChangerUpdatedDetail">
+    <Key>
+      <PropertyRef Name="UpdatedDetailId" />
+    </Key>
+    <Property Name="ShopKeeperAccountNumber" Type="Int64" />
+    <Property Name="CustomerAccountNumber" Type="Int64" />
+    <Property Name="PreviousValue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UpdatedField" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="CustomerDetail" Relationship="Self.FK_ChangerUpdatedDetails_CustomerDetails" FromRole="ChangerUpdatedDetails" ToRole="CustomerDetails" />
+    <NavigationProperty Name="ShopKeeperAccountNumber1" Relationship="Self.FK_ChangerUpdatedDetails_ShopKeeperAccountNumbers" FromRole="ChangerUpdatedDetails" ToRole="ShopKeeperAccountNumbers" />
+    <NavigationProperty Name="ShopKeeperAccountNumber2" Relationship="Self.FK_ShopKeeperUpdatedDetails_ShopKeeperAccountNumbers" FromRole="ChangerUpdatedDetails" ToRole="ShopKeeperAccountNumbers" />
+  </EntityType>
+  <EntityType Name="ChangerWrongNFCEntry">
+    <Key>
+      <PropertyRef Name="SNO" />
+    </Key>
+    <Property Name="SNO" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MobileNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NFC" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerAccountDetail">
+    <Key>
+      <PropertyRef Name="CustomerAccountNumber" />
+    </Key>
+    <Property Name="CustomerAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="Balance" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="CustomerDetail" Relationship="Self.FK_CustomerAccountDetails_CustomerDetails" FromRole="CustomerAccountDetails" ToRole="CustomerDetails" />
+  </EntityType>
+  <EntityType Name="CustomerDetail">
+    <Key>
+      <PropertyRef Name="CustomerAccountNumber" />
+    </Key>
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="Password" Type="Int32" Nullable="false" />
+    <Property Name="NFCTagID" Type="Int64" Nullable="false" />
+    <Property Name="AccountStatus" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Privileges" Type="Int32" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ChangerUpdatedDetails" Relationship="Self.FK_ChangerUpdatedDetails_CustomerDetails" FromRole="CustomerDetails" ToRole="ChangerUpdatedDetails" />
+    <NavigationProperty Name="CustomerAccountDetail" Relationship="Self.FK_CustomerAccountDetails_CustomerDetails" FromRole="CustomerDetails" ToRole="CustomerAccountDetails" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_CustomerDetails_Status" FromRole="CustomerDetails" ToRole="Status" />
+    <NavigationProperty Name="UserPrivilege" Relationship="Self.FK_CustomerDetails_UserPrivileges_PrivilegeID" FromRole="CustomerDetails" ToRole="UserPrivileges" />
+  </EntityType>
+  <EntityType Name="CustomerNFCTagDetail">
+    <Key>
+      <PropertyRef Name="NFCTagID" />
+    </Key>
+    <Property Name="NFCTagID" Type="Int64" Nullable="false" />
+    <Property Name="NFCTagUID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PIN" Type="Int64" Nullable="false" />
+    <Property Name="NFCSerialNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NFCStatus" Type="Int32" Nullable="false" />
+    <Property Name="KYCFormNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NFCKitSerialNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_CustomerNFCTagDetails_Status" FromRole="CustomerNFCTagDetails" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="CustomerTransactionDetail">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="CustomerAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="Balance" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ReceivedFrom" Type="Int64" Nullable="false" />
+    <Property Name="PaidTo" Type="Int64" Nullable="false" />
+    <Property Name="AmountTransfered" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TransactionDate" Type="DateTime" Precision="3" />
+    <Property Name="TransactionStatus" Type="Int32" Nullable="false" />
+    <Property Name="CustomerTransactionID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TerminalIMEINumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TransactionID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_CustomerTransactionDetails_Status" FromRole="CustomerTransactionDetails" ToRole="Status" />
+    <NavigationProperty Name="OTP" Relationship="Self.FK_OTP_CustomerTransactionDetails" FromRole="CustomerTransactionDetails" ToRole="OTP" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Thread" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Level" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Logger" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Exception" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LoginDetail">
+    <Key>
+      <PropertyRef Name="PhoneNumber" />
+    </Key>
+    <Property Name="SNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsShopKeeper" Type="Boolean" />
+    <Property Name="IsCustomer" Type="Boolean" />
+    <Property Name="IsDealer" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="OTP">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="OTPNumber" Type="Int64" Nullable="false" />
+    <Property Name="CustomerAccountnumber" Type="Int64" Nullable="false" />
+    <Property Name="ValidFrom" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ValidTo" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="Hits" Type="Int32" />
+    <Property Name="TransactionID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ShopkeeperAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="TID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="CustomerTransactionDetail" Relationship="Self.FK_OTP_CustomerTransactionDetails" FromRole="OTP" ToRole="CustomerTransactionDetails" />
+    <NavigationProperty Name="ShopKeeperTransactionDetail" Relationship="Self.FK_OTP_ShopKeeperTransactionDetails" FromRole="OTP" ToRole="ShopKeeperTransactionDetails" />
+    <NavigationProperty Name="TransactionType" Relationship="Self.FK_OTP_TransactionTypes" FromRole="OTP" ToRole="TransactionTypes" />
+  </EntityType>
+  <EntityType Name="ShopKeeperAccountDetail">
+    <Key>
+      <PropertyRef Name="ShopKeeperAccountNumberID" />
+    </Key>
+    <Property Name="ShopKeeperAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="SenderBalance" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ReceiverBalance" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ShopKeeperAccountNumberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ShopKeeperAccountNumber1" Relationship="Self.FK_ShopKeeperAccountDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperAccountDetails" ToRole="ShopKeeperAccountNumbers" />
+  </EntityType>
+  <EntityType Name="ShopKeeperAccountNumber">
+    <Key>
+      <PropertyRef Name="ShopKeeperAccountNumber1" />
+    </Key>
+    <Property Name="ShopKeeperAccountNumber1" Type="Int64" Nullable="false" />
+    <Property Name="SenderAccountNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReceiverAccountNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ChangerUpdatedDetails" Relationship="Self.FK_ChangerUpdatedDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperAccountNumbers" ToRole="ChangerUpdatedDetails" />
+    <NavigationProperty Name="ChangerUpdatedDetails1" Relationship="Self.FK_ShopKeeperUpdatedDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperAccountNumbers" ToRole="ChangerUpdatedDetails" />
+    <NavigationProperty Name="ShopKeeperAccountDetails" Relationship="Self.FK_ShopKeeperAccountDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperAccountNumbers" ToRole="ShopKeeperAccountDetails" />
+    <NavigationProperty Name="ShopKeeperRechargeDetails" Relationship="Self.FK__ShopKeepe__ShopK__2F10007B" FromRole="ShopKeeperAccountNumbers" ToRole="ShopKeeperRechargeDetails" />
+    <NavigationProperty Name="ShopKeeperRechargeDetails1" Relationship="Self.FK__ShopKeepe__ShopK__5070F446" FromRole="ShopKeeperAccountNumbers" ToRole="ShopKeeperRechargeDetails" />
+    <NavigationProperty Name="Status1" Relationship="Self.FK_ShopKeeperAccountNumbers_Status" FromRole="ShopKeeperAccountNumbers" ToRole="Status" />
+    <NavigationProperty Name="ShopKeeperDetails" Relationship="Self.FK_ShopKeeperDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperAccountNumbers" ToRole="ShopKeeperDetails" />
+    <NavigationProperty Name="ShopKeeperSmartCardMasters" Relationship="Self.FK_ShopKeeperSmartCardMaster_ShopKeeperAccountNumbers" FromRole="ShopKeeperAccountNumbers" ToRole="ShopKeeperSmartCardMaster" />
+    <NavigationProperty Name="ShopKeeperTerminalDetails" Relationship="Self.FK_ShopKeeperTerminalDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperAccountNumbers" ToRole="ShopKeeperTerminalDetails" />
+  </EntityType>
+  <EntityType Name="ShopKeeperDetail">
+    <Key>
+      <PropertyRef Name="PhoneNumber" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Locality" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PinCode" Type="Int64" Nullable="false" />
+    <Property Name="KYCNormsNumber" Type="Int32" Nullable="false" />
+    <Property Name="ShopKeeperAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="AccountStatus" Type="Int32" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AddressProofID" Type="Int32" Nullable="false" />
+    <Property Name="AddressProofIDNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BankAccountNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="NFCTagID" Type="Int64" />
+    <NavigationProperty Name="AddressProof" Relationship="Self.FK_ShopKeeperDetails_AddressProof_ID" FromRole="ShopKeeperDetails" ToRole="AddressProof" />
+    <NavigationProperty Name="ShopKeeperAccountNumber1" Relationship="Self.FK_ShopKeeperDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperDetails" ToRole="ShopKeeperAccountNumbers" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_ShopKeeperDetails_Status" FromRole="ShopKeeperDetails" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="ShopKeeperRechargeDetail">
+    <Key>
+      <PropertyRef Name="SNo" />
+    </Key>
+    <Property Name="ShopKeeperAccountNumber" Type="Int64" />
+    <Property Name="RechargeAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Comission" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="SNo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ShopKeeperAccountNumber1" Relationship="Self.FK__ShopKeepe__ShopK__2F10007B" FromRole="ShopKeeperRechargeDetails" ToRole="ShopKeeperAccountNumbers" />
+    <NavigationProperty Name="ShopKeeperAccountNumber2" Relationship="Self.FK__ShopKeepe__ShopK__5070F446" FromRole="ShopKeeperRechargeDetails" ToRole="ShopKeeperAccountNumbers" />
+  </EntityType>
+  <EntityType Name="ShopKeeperSmartCardMaster">
+    <Key>
+      <PropertyRef Name="ShopKeeperSmartCardID" />
+    </Key>
+    <Property Name="ShopKeeperAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="SmartCardSerialNumber" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SmartCardSerialNumberStatus" Type="Int32" Nullable="false" />
+    <Property Name="ShopKeeperSmartCardID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ShopKeeperAccountNumber1" Relationship="Self.FK_ShopKeeperSmartCardMaster_ShopKeeperAccountNumbers" FromRole="ShopKeeperSmartCardMaster" ToRole="ShopKeeperAccountNumbers" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_ShopKeeperSmartCardMaster_Status" FromRole="ShopKeeperSmartCardMaster" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="ShopKeeperTerminalDetail">
+    <Key>
+      <PropertyRef Name="TerminalIMEINumber" />
+    </Key>
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TerminalStatusID" Type="Int32" Nullable="false" />
+    <Property Name="TerminalIMEINumber" Type="Int64" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AccountNumber" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ShopKeeperAccountNumber" Relationship="Self.FK_ShopKeeperTerminalDetails_ShopKeeperAccountNumbers" FromRole="ShopKeeperTerminalDetails" ToRole="ShopKeeperAccountNumbers" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_ShopKeeperTerminalDetails_Status" FromRole="ShopKeeperTerminalDetails" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="ShopKeeperTransactionDetail">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="ShopKeeperAccountNumber" Type="Int64" Nullable="false" />
+    <Property Name="SenderBalance" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ReceiverBalance" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ReceivedFrom" Type="Int64" Nullable="false" />
+    <Property Name="PaidTo" Type="Int64" Nullable="false" />
+    <Property Name="AmountTransfered" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Precision="3" />
+    <Property Name="TransactionStatus" Type="Int32" Nullable="false" />
+    <Property Name="ShopKeeperTransactionID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TerminalIMEINumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TransactionID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="OTP" Relationship="Self.FK_OTP_ShopKeeperTransactionDetails" FromRole="ShopKeeperTransactionDetails" ToRole="OTP" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_ShopKeeperTransactionDetails_Status" FromRole="ShopKeeperTransactionDetails" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="Int32" Nullable="false" />
+    <Property Name="Status1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CustomerDetails" Relationship="Self.FK_CustomerDetails_Status" FromRole="Status" ToRole="CustomerDetails" />
+    <NavigationProperty Name="CustomerNFCTagDetails" Relationship="Self.FK_CustomerNFCTagDetails_Status" FromRole="Status" ToRole="CustomerNFCTagDetails" />
+    <NavigationProperty Name="CustomerTransactionDetails" Relationship="Self.FK_CustomerTransactionDetails_Status" FromRole="Status" ToRole="CustomerTransactionDetails" />
+    <NavigationProperty Name="ShopKeeperAccountNumbers" Relationship="Self.FK_ShopKeeperAccountNumbers_Status" FromRole="Status" ToRole="ShopKeeperAccountNumbers" />
+    <NavigationProperty Name="ShopKeeperDetails" Relationship="Self.FK_ShopKeeperDetails_Status" FromRole="Status" ToRole="ShopKeeperDetails" />
+    <NavigationProperty Name="ShopKeeperSmartCardMasters" Relationship="Self.FK_ShopKeeperSmartCardMaster_Status" FromRole="Status" ToRole="ShopKeeperSmartCardMaster" />
+    <NavigationProperty Name="ShopKeeperTerminalDetails" Relationship="Self.FK_ShopKeeperTerminalDetails_Status" FromRole="Status" ToRole="ShopKeeperTerminalDetails" />
+    <NavigationProperty Name="ShopKeeperTransactionDetails" Relationship="Self.FK_ShopKeeperTransactionDetails_Status" FromRole="Status" ToRole="ShopKeeperTransactionDetails" />
+  </EntityType>
+  <EntityType Name="TransactionType">
+    <Key>
+      <PropertyRef Name="TID" />
+    </Key>
+    <Property Name="TID" Type="Int32" Nullable="false" />
+    <Property Name="TTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OTPs" Relationship="Self.FK_OTP_TransactionTypes" FromRole="TransactionTypes" ToRole="OTP" />
+  </EntityType>
+  <EntityType Name="UserPrivilege">
+    <Key>
+      <PropertyRef Name="PrivilegeID" />
+    </Key>
+    <Property Name="PrivilegeType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PrivilegeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerDetails" Relationship="Self.FK_CustomerDetails_UserPrivileges_PrivilegeID" FromRole="UserPrivileges" ToRole="CustomerDetails" />
+  </EntityType>
+  <Association Name="FK_ShopKeeperDetails_AddressProof_ID">
+    <End Role="AddressProof" Type="Self.AddressProof" Multiplicity="1" />
+    <End Role="ShopKeeperDetails" Type="Self.ShopKeeperDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressProof">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ShopKeeperDetails">
+        <PropertyRef Name="AddressProofID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChangerUpdatedDetails_CustomerDetails">
+    <End Role="CustomerDetails" Type="Self.CustomerDetail" Multiplicity="0..1" />
+    <End Role="ChangerUpdatedDetails" Type="Self.ChangerUpdatedDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerDetails">
+        <PropertyRef Name="CustomerAccountNumber" />
+      </Principal>
+      <Dependent Role="ChangerUpdatedDetails">
+        <PropertyRef Name="CustomerAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChangerUpdatedDetails_ShopKeeperAccountNumbers">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="0..1" />
+    <End Role="ChangerUpdatedDetails" Type="Self.ChangerUpdatedDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ChangerUpdatedDetails">
+        <PropertyRef Name="ShopKeeperAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperUpdatedDetails_ShopKeeperAccountNumbers">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="0..1" />
+    <End Role="ChangerUpdatedDetails" Type="Self.ChangerUpdatedDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ChangerUpdatedDetails">
+        <PropertyRef Name="ShopKeeperAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerAccountDetails_CustomerDetails">
+    <End Role="CustomerDetails" Type="Self.CustomerDetail" Multiplicity="1" />
+    <End Role="CustomerAccountDetails" Type="Self.CustomerAccountDetail" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerDetails">
+        <PropertyRef Name="CustomerAccountNumber" />
+      </Principal>
+      <Dependent Role="CustomerAccountDetails">
+        <PropertyRef Name="CustomerAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerDetails_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="CustomerDetails" Type="Self.CustomerDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="CustomerDetails">
+        <PropertyRef Name="AccountStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerDetails_UserPrivileges_PrivilegeID">
+    <End Role="UserPrivileges" Type="Self.UserPrivilege" Multiplicity="1" />
+    <End Role="CustomerDetails" Type="Self.CustomerDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserPrivileges">
+        <PropertyRef Name="PrivilegeID" />
+      </Principal>
+      <Dependent Role="CustomerDetails">
+        <PropertyRef Name="Privileges" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerNFCTagDetails_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="CustomerNFCTagDetails" Type="Self.CustomerNFCTagDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="CustomerNFCTagDetails">
+        <PropertyRef Name="NFCStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerTransactionDetails_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="CustomerTransactionDetails" Type="Self.CustomerTransactionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="CustomerTransactionDetails">
+        <PropertyRef Name="TransactionStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OTP_CustomerTransactionDetails">
+    <End Role="CustomerTransactionDetails" Type="Self.CustomerTransactionDetail" Multiplicity="1" />
+    <End Role="OTP" Type="Self.OTP" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerTransactionDetails">
+        <PropertyRef Name="TransactionID" />
+      </Principal>
+      <Dependent Role="OTP">
+        <PropertyRef Name="TransactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OTP_ShopKeeperTransactionDetails">
+    <End Role="ShopKeeperTransactionDetails" Type="Self.ShopKeeperTransactionDetail" Multiplicity="1" />
+    <End Role="OTP" Type="Self.OTP" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperTransactionDetails">
+        <PropertyRef Name="TransactionID" />
+      </Principal>
+      <Dependent Role="OTP">
+        <PropertyRef Name="TransactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OTP_TransactionTypes">
+    <End Role="TransactionTypes" Type="Self.TransactionType" Multiplicity="1" />
+    <End Role="OTP" Type="Self.OTP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TransactionTypes">
+        <PropertyRef Name="TID" />
+      </Principal>
+      <Dependent Role="OTP">
+        <PropertyRef Name="TID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperAccountDetails_ShopKeeperAccountNumbers">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="1" />
+    <End Role="ShopKeeperAccountDetails" Type="Self.ShopKeeperAccountDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ShopKeeperAccountDetails">
+        <PropertyRef Name="ShopKeeperAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShopKeepe__ShopK__2F10007B">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="0..1" />
+    <End Role="ShopKeeperRechargeDetails" Type="Self.ShopKeeperRechargeDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ShopKeeperRechargeDetails">
+        <PropertyRef Name="ShopKeeperAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShopKeepe__ShopK__5070F446">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="0..1" />
+    <End Role="ShopKeeperRechargeDetails" Type="Self.ShopKeeperRechargeDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ShopKeeperRechargeDetails">
+        <PropertyRef Name="ShopKeeperAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperAccountNumbers_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperDetails_ShopKeeperAccountNumbers">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="1" />
+    <End Role="ShopKeeperDetails" Type="Self.ShopKeeperDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ShopKeeperDetails">
+        <PropertyRef Name="ShopKeeperAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperSmartCardMaster_ShopKeeperAccountNumbers">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="1" />
+    <End Role="ShopKeeperSmartCardMaster" Type="Self.ShopKeeperSmartCardMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ShopKeeperSmartCardMaster">
+        <PropertyRef Name="ShopKeeperAccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperTerminalDetails_ShopKeeperAccountNumbers">
+    <End Role="ShopKeeperAccountNumbers" Type="Self.ShopKeeperAccountNumber" Multiplicity="1" />
+    <End Role="ShopKeeperTerminalDetails" Type="Self.ShopKeeperTerminalDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopKeeperAccountNumbers">
+        <PropertyRef Name="ShopKeeperAccountNumber1" />
+      </Principal>
+      <Dependent Role="ShopKeeperTerminalDetails">
+        <PropertyRef Name="AccountNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperDetails_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="ShopKeeperDetails" Type="Self.ShopKeeperDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="ShopKeeperDetails">
+        <PropertyRef Name="AccountStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperSmartCardMaster_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="ShopKeeperSmartCardMaster" Type="Self.ShopKeeperSmartCardMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="ShopKeeperSmartCardMaster">
+        <PropertyRef Name="SmartCardSerialNumberStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperTerminalDetails_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="ShopKeeperTerminalDetails" Type="Self.ShopKeeperTerminalDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="ShopKeeperTerminalDetails">
+        <PropertyRef Name="TerminalStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShopKeeperTransactionDetails_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="ShopKeeperTransactionDetails" Type="Self.ShopKeeperTransactionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="ShopKeeperTransactionDetails">
+        <PropertyRef Name="TransactionStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ChangerMintsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AddressProofs" EntityType="Self.AddressProof" />
+    <EntitySet Name="Beneficiaries" EntityType="Self.Beneficiary" />
+    <EntitySet Name="ChangerBlockLists" EntityType="Self.ChangerBlockList" />
+    <EntitySet Name="ChangerUpdatedDetails" EntityType="Self.ChangerUpdatedDetail" />
+    <EntitySet Name="ChangerWrongNFCEntries" EntityType="Self.ChangerWrongNFCEntry" />
+    <EntitySet Name="CustomerAccountDetails" EntityType="Self.CustomerAccountDetail" />
+    <EntitySet Name="CustomerDetails" EntityType="Self.CustomerDetail" />
+    <EntitySet Name="CustomerNFCTagDetails" EntityType="Self.CustomerNFCTagDetail" />
+    <EntitySet Name="CustomerTransactionDetails" EntityType="Self.CustomerTransactionDetail" />
+    <EntitySet Name="Logs" EntityType="Self.Log" />
+    <EntitySet Name="LoginDetails" EntityType="Self.LoginDetail" />
+    <EntitySet Name="OTPs" EntityType="Self.OTP" />
+    <EntitySet Name="ShopKeeperAccountDetails" EntityType="Self.ShopKeeperAccountDetail" />
+    <EntitySet Name="ShopKeeperAccountNumbers" EntityType="Self.ShopKeeperAccountNumber" />
+    <EntitySet Name="ShopKeeperDetails" EntityType="Self.ShopKeeperDetail" />
+    <EntitySet Name="ShopKeeperRechargeDetails" EntityType="Self.ShopKeeperRechargeDetail" />
+    <EntitySet Name="ShopKeeperSmartCardMasters" EntityType="Self.ShopKeeperSmartCardMaster" />
+    <EntitySet Name="ShopKeeperTerminalDetails" EntityType="Self.ShopKeeperTerminalDetail" />
+    <EntitySet Name="ShopKeeperTransactionDetails" EntityType="Self.ShopKeeperTransactionDetail" />
+    <EntitySet Name="Status" EntityType="Self.Status" />
+    <EntitySet Name="TransactionTypes" EntityType="Self.TransactionType" />
+    <EntitySet Name="UserPrivileges" EntityType="Self.UserPrivilege" />
+    <AssociationSet Name="FK_ShopKeeperDetails_AddressProof_ID" Association="Self.FK_ShopKeeperDetails_AddressProof_ID">
+      <End Role="AddressProof" EntitySet="AddressProofs" />
+      <End Role="ShopKeeperDetails" EntitySet="ShopKeeperDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChangerUpdatedDetails_CustomerDetails" Association="Self.FK_ChangerUpdatedDetails_CustomerDetails">
+      <End Role="CustomerDetails" EntitySet="CustomerDetails" />
+      <End Role="ChangerUpdatedDetails" EntitySet="ChangerUpdatedDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChangerUpdatedDetails_ShopKeeperAccountNumbers" Association="Self.FK_ChangerUpdatedDetails_ShopKeeperAccountNumbers">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ChangerUpdatedDetails" EntitySet="ChangerUpdatedDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperUpdatedDetails_ShopKeeperAccountNumbers" Association="Self.FK_ShopKeeperUpdatedDetails_ShopKeeperAccountNumbers">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ChangerUpdatedDetails" EntitySet="ChangerUpdatedDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerAccountDetails_CustomerDetails" Association="Self.FK_CustomerAccountDetails_CustomerDetails">
+      <End Role="CustomerDetails" EntitySet="CustomerDetails" />
+      <End Role="CustomerAccountDetails" EntitySet="CustomerAccountDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerDetails_Status" Association="Self.FK_CustomerDetails_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="CustomerDetails" EntitySet="CustomerDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerDetails_UserPrivileges_PrivilegeID" Association="Self.FK_CustomerDetails_UserPrivileges_PrivilegeID">
+      <End Role="UserPrivileges" EntitySet="UserPrivileges" />
+      <End Role="CustomerDetails" EntitySet="CustomerDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerNFCTagDetails_Status" Association="Self.FK_CustomerNFCTagDetails_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="CustomerNFCTagDetails" EntitySet="CustomerNFCTagDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerTransactionDetails_Status" Association="Self.FK_CustomerTransactionDetails_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="CustomerTransactionDetails" EntitySet="CustomerTransactionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OTP_CustomerTransactionDetails" Association="Self.FK_OTP_CustomerTransactionDetails">
+      <End Role="CustomerTransactionDetails" EntitySet="CustomerTransactionDetails" />
+      <End Role="OTP" EntitySet="OTPs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OTP_ShopKeeperTransactionDetails" Association="Self.FK_OTP_ShopKeeperTransactionDetails">
+      <End Role="ShopKeeperTransactionDetails" EntitySet="ShopKeeperTransactionDetails" />
+      <End Role="OTP" EntitySet="OTPs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OTP_TransactionTypes" Association="Self.FK_OTP_TransactionTypes">
+      <End Role="TransactionTypes" EntitySet="TransactionTypes" />
+      <End Role="OTP" EntitySet="OTPs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperAccountDetails_ShopKeeperAccountNumbers" Association="Self.FK_ShopKeeperAccountDetails_ShopKeeperAccountNumbers">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ShopKeeperAccountDetails" EntitySet="ShopKeeperAccountDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShopKeepe__ShopK__2F10007B" Association="Self.FK__ShopKeepe__ShopK__2F10007B">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ShopKeeperRechargeDetails" EntitySet="ShopKeeperRechargeDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShopKeepe__ShopK__5070F446" Association="Self.FK__ShopKeepe__ShopK__5070F446">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ShopKeeperRechargeDetails" EntitySet="ShopKeeperRechargeDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperAccountNumbers_Status" Association="Self.FK_ShopKeeperAccountNumbers_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperDetails_ShopKeeperAccountNumbers" Association="Self.FK_ShopKeeperDetails_ShopKeeperAccountNumbers">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ShopKeeperDetails" EntitySet="ShopKeeperDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperSmartCardMaster_ShopKeeperAccountNumbers" Association="Self.FK_ShopKeeperSmartCardMaster_ShopKeeperAccountNumbers">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ShopKeeperSmartCardMaster" EntitySet="ShopKeeperSmartCardMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperTerminalDetails_ShopKeeperAccountNumbers" Association="Self.FK_ShopKeeperTerminalDetails_ShopKeeperAccountNumbers">
+      <End Role="ShopKeeperAccountNumbers" EntitySet="ShopKeeperAccountNumbers" />
+      <End Role="ShopKeeperTerminalDetails" EntitySet="ShopKeeperTerminalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperDetails_Status" Association="Self.FK_ShopKeeperDetails_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ShopKeeperDetails" EntitySet="ShopKeeperDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperSmartCardMaster_Status" Association="Self.FK_ShopKeeperSmartCardMaster_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ShopKeeperSmartCardMaster" EntitySet="ShopKeeperSmartCardMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperTerminalDetails_Status" Association="Self.FK_ShopKeeperTerminalDetails_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ShopKeeperTerminalDetails" EntitySet="ShopKeeperTerminalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShopKeeperTransactionDetails_Status" Association="Self.FK_ShopKeeperTransactionDetails_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ShopKeeperTransactionDetails" EntitySet="ShopKeeperTransactionDetails" />
+    </AssociationSet>
+    <FunctionImport Name="checkcustomer">
+      <Parameter Name="phone" Mode="In" Type="String" />
+      <Parameter Name="tagid" Mode="In" Type="String" />
+      <Parameter Name="uid" Mode="In" Type="String" />
+      <Parameter Name="pin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_balance" ReturnType="Collection(Decimal)">
+      <Parameter Name="number" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_fundstransfer">
+      <Parameter Name="num1" Mode="In" Type="Decimal" />
+      <Parameter Name="num2" Mode="In" Type="Decimal" />
+      <Parameter Name="amount" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_Get_Error_Info" ReturnType="Collection(ChangerMintsModel.cm_sp_Get_Error_Info_Result)" />
+    <FunctionImport Name="cm_sp_is_Customer_Active">
+      <Parameter Name="customer" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_is_Customer_Registered" ReturnType="Collection(Int32)">
+      <Parameter Name="customer" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_is_imei_valid" ReturnType="Collection(Int32)">
+      <Parameter Name="imei" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_is_NFC_PIN_Active">
+      <Parameter Name="pin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_is_NFC_PIN_Valid" ReturnType="Collection(Int32)">
+      <Parameter Name="pin" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_register_customer">
+      <Parameter Name="PIN" Mode="In" Type="Int64" />
+      <Parameter Name="phoneNumber" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="Int32" />
+      <Parameter Name="customeraccountno" Mode="In" Type="Int64" />
+      <Parameter Name="loginpassword" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_send_sms">
+      <Parameter Name="MobileNo" Mode="In" Type="String" />
+      <Parameter Name="smstext" Mode="In" Type="String" />
+      <Parameter Name="sResponse" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="cm_sp_unregister_customer">
+      <Parameter Name="number" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="cm_sp_Get_Error_Info_Result">
+    <Property Type="Int32" Name="ErrorNumber" Nullable="true" />
+    <Property Type="Int32" Name="ErrorSeverity" Nullable="true" />
+    <Property Type="Int32" Name="ErrorState" Nullable="true" />
+    <Property Type="String" Name="ErrorProcedure" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="ErrorLine" Nullable="true" />
+    <Property Type="String" Name="ErrorMessage" Nullable="true" MaxLength="4000" />
+  </ComplexType>
+</Schema>

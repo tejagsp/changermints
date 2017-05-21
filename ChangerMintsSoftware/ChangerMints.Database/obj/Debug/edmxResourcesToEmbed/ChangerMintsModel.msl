@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChangerMintsModelStoreContainer" CdmEntityContainer="ChangerMintsEntities">
+    <EntitySetMapping Name="AddressProofs">
+      <EntityTypeMapping TypeName="ChangerMintsModel.AddressProof">
+        <MappingFragment StoreEntitySet="AddressProof">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AddressProof1" ColumnName="AddressProof" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Beneficiaries">
+      <EntityTypeMapping TypeName="ChangerMintsModel.Beneficiary">
+        <MappingFragment StoreEntitySet="Beneficiaries">
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="BeneficiaryPhoneNumber" ColumnName="BeneficiaryPhoneNumber" />
+          <ScalarProperty Name="BeneficiaryName" ColumnName="BeneficiaryName" />
+          <ScalarProperty Name="TransferLimit" ColumnName="TransferLimit" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChangerBlockLists">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ChangerBlockList">
+        <MappingFragment StoreEntitySet="ChangerBlockList">
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Blocked" ColumnName="Blocked" />
+          <ScalarProperty Name="SemiBlocked" ColumnName="SemiBlocked" />
+          <ScalarProperty Name="Attempts" ColumnName="Attempts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChangerUpdatedDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ChangerUpdatedDetail">
+        <MappingFragment StoreEntitySet="ChangerUpdatedDetails">
+          <ScalarProperty Name="ShopKeeperAccountNumber" ColumnName="ShopKeeperAccountNumber" />
+          <ScalarProperty Name="CustomerAccountNumber" ColumnName="CustomerAccountNumber" />
+          <ScalarProperty Name="PreviousValue" ColumnName="PreviousValue" />
+          <ScalarProperty Name="UpdatedField" ColumnName="UpdatedField" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedDetailId" ColumnName="UpdatedDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChangerWrongNFCEntries">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ChangerWrongNFCEntry">
+        <MappingFragment StoreEntitySet="ChangerWrongNFCEntries">
+          <ScalarProperty Name="SNO" ColumnName="SNO" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="NFC" ColumnName="NFC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerAccountDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.CustomerAccountDetail">
+        <MappingFragment StoreEntitySet="CustomerAccountDetails">
+          <ScalarProperty Name="CustomerAccountNumber" ColumnName="CustomerAccountNumber" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.CustomerDetail">
+        <MappingFragment StoreEntitySet="CustomerDetails">
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CustomerAccountNumber" ColumnName="CustomerAccountNumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="NFCTagID" ColumnName="NFCTagID" />
+          <ScalarProperty Name="AccountStatus" ColumnName="AccountStatus" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Privileges" ColumnName="Privileges" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerNFCTagDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.CustomerNFCTagDetail">
+        <MappingFragment StoreEntitySet="CustomerNFCTagDetails">
+          <ScalarProperty Name="NFCTagID" ColumnName="NFCTagID" />
+          <ScalarProperty Name="NFCTagUID" ColumnName="NFCTagUID" />
+          <ScalarProperty Name="PIN" ColumnName="PIN" />
+          <ScalarProperty Name="NFCSerialNumber" ColumnName="NFCSerialNumber" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="NFCStatus" ColumnName="NFCStatus" />
+          <ScalarProperty Name="KYCFormNumber" ColumnName="KYCFormNumber" />
+          <ScalarProperty Name="NFCKitSerialNumber" ColumnName="NFCKitSerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerTransactionDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.CustomerTransactionDetail">
+        <MappingFragment StoreEntitySet="CustomerTransactionDetails">
+          <ScalarProperty Name="CustomerAccountNumber" ColumnName="CustomerAccountNumber" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="ReceivedFrom" ColumnName="ReceivedFrom" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="AmountTransfered" ColumnName="AmountTransfered" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="CustomerTransactionID" ColumnName="CustomerTransactionID" />
+          <ScalarProperty Name="TerminalIMEINumber" ColumnName="TerminalIMEINumber" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="ChangerMintsModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Thread" ColumnName="Thread" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Logger" ColumnName="Logger" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.LoginDetail">
+        <MappingFragment StoreEntitySet="LoginDetails">
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsShopKeeper" ColumnName="IsShopKeeper" />
+          <ScalarProperty Name="IsCustomer" ColumnName="IsCustomer" />
+          <ScalarProperty Name="IsDealer" ColumnName="IsDealer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OTPs">
+      <EntityTypeMapping TypeName="ChangerMintsModel.OTP">
+        <MappingFragment StoreEntitySet="OTP">
+          <ScalarProperty Name="OTPNumber" ColumnName="OTPNumber" />
+          <ScalarProperty Name="CustomerAccountnumber" ColumnName="CustomerAccountnumber" />
+          <ScalarProperty Name="ValidFrom" ColumnName="ValidFrom" />
+          <ScalarProperty Name="ValidTo" ColumnName="ValidTo" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Hits" ColumnName="Hits" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="ShopkeeperAccountNumber" ColumnName="ShopkeeperAccountNumber" />
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopKeeperAccountDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ShopKeeperAccountDetail">
+        <MappingFragment StoreEntitySet="ShopKeeperAccountDetails">
+          <ScalarProperty Name="ShopKeeperAccountNumber" ColumnName="ShopKeeperAccountNumber" />
+          <ScalarProperty Name="SenderBalance" ColumnName="SenderBalance" />
+          <ScalarProperty Name="ReceiverBalance" ColumnName="ReceiverBalance" />
+          <ScalarProperty Name="ShopKeeperAccountNumberID" ColumnName="ShopKeeperAccountNumberID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopKeeperAccountNumbers">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ShopKeeperAccountNumber">
+        <MappingFragment StoreEntitySet="ShopKeeperAccountNumbers">
+          <ScalarProperty Name="ShopKeeperAccountNumber1" ColumnName="ShopKeeperAccountNumber" />
+          <ScalarProperty Name="SenderAccountNumber" ColumnName="SenderAccountNumber" />
+          <ScalarProperty Name="ReceiverAccountNumber" ColumnName="ReceiverAccountNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopKeeperDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ShopKeeperDetail">
+        <MappingFragment StoreEntitySet="ShopKeeperDetails">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Locality" ColumnName="Locality" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="KYCNormsNumber" ColumnName="KYCNormsNumber" />
+          <ScalarProperty Name="ShopKeeperAccountNumber" ColumnName="ShopKeeperAccountNumber" />
+          <ScalarProperty Name="AccountStatus" ColumnName="AccountStatus" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AddressProofID" ColumnName="AddressProofID" />
+          <ScalarProperty Name="AddressProofIDNumber" ColumnName="AddressProofIDNumber" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="NFCTagID" ColumnName="NFCTagID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopKeeperRechargeDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ShopKeeperRechargeDetail">
+        <MappingFragment StoreEntitySet="ShopKeeperRechargeDetails">
+          <ScalarProperty Name="ShopKeeperAccountNumber" ColumnName="ShopKeeperAccountNumber" />
+          <ScalarProperty Name="RechargeAmount" ColumnName="RechargeAmount" />
+          <ScalarProperty Name="Comission" ColumnName="Comission" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopKeeperSmartCardMasters">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ShopKeeperSmartCardMaster">
+        <MappingFragment StoreEntitySet="ShopKeeperSmartCardMaster">
+          <ScalarProperty Name="ShopKeeperAccountNumber" ColumnName="ShopKeeperAccountNumber" />
+          <ScalarProperty Name="SmartCardSerialNumber" ColumnName="SmartCardSerialNumber" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="SmartCardSerialNumberStatus" ColumnName="SmartCardSerialNumberStatus" />
+          <ScalarProperty Name="ShopKeeperSmartCardID" ColumnName="ShopKeeperSmartCardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopKeeperTerminalDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ShopKeeperTerminalDetail">
+        <MappingFragment StoreEntitySet="ShopKeeperTerminalDetails">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TerminalStatusID" ColumnName="TerminalStatusID" />
+          <ScalarProperty Name="TerminalIMEINumber" ColumnName="TerminalIMEINumber" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopKeeperTransactionDetails">
+      <EntityTypeMapping TypeName="ChangerMintsModel.ShopKeeperTransactionDetail">
+        <MappingFragment StoreEntitySet="ShopKeeperTransactionDetails">
+          <ScalarProperty Name="ShopKeeperAccountNumber" ColumnName="ShopKeeperAccountNumber" />
+          <ScalarProperty Name="SenderBalance" ColumnName="SenderBalance" />
+          <ScalarProperty Name="ReceiverBalance" ColumnName="ReceiverBalance" />
+          <ScalarProperty Name="ReceivedFrom" ColumnName="ReceivedFrom" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="AmountTransfered" ColumnName="AmountTransfered" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="ShopKeeperTransactionID" ColumnName="ShopKeeperTransactionID" />
+          <ScalarProperty Name="TerminalIMEINumber" ColumnName="TerminalIMEINumber" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="ChangerMintsModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="Status1" ColumnName="Status" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionTypes">
+      <EntityTypeMapping TypeName="ChangerMintsModel.TransactionType">
+        <MappingFragment StoreEntitySet="TransactionTypes">
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="TTYPE" ColumnName="TTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPrivileges">
+      <EntityTypeMapping TypeName="ChangerMintsModel.UserPrivilege">
+        <MappingFragment StoreEntitySet="UserPrivileges">
+          <ScalarProperty Name="PrivilegeType" ColumnName="PrivilegeType" />
+          <ScalarProperty Name="PrivilegeID" ColumnName="PrivilegeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="checkcustomer" FunctionName="ChangerMintsModel.Store.checkcustomer" />
+    <FunctionImportMapping FunctionImportName="cm_sp_balance" FunctionName="ChangerMintsModel.Store.cm_sp_balance" />
+    <FunctionImportMapping FunctionImportName="cm_sp_fundstransfer" FunctionName="ChangerMintsModel.Store.cm_sp_fundstransfer" />
+    <FunctionImportMapping FunctionImportName="cm_sp_Get_Error_Info" FunctionName="ChangerMintsModel.Store.cm_sp_Get_Error_Info">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChangerMintsModel.cm_sp_Get_Error_Info_Result">
+          <ScalarProperty Name="ErrorNumber" ColumnName="ErrorNumber" />
+          <ScalarProperty Name="ErrorSeverity" ColumnName="ErrorSeverity" />
+          <ScalarProperty Name="ErrorState" ColumnName="ErrorState" />
+          <ScalarProperty Name="ErrorProcedure" ColumnName="ErrorProcedure" />
+          <ScalarProperty Name="ErrorLine" ColumnName="ErrorLine" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="cm_sp_is_Customer_Active" FunctionName="ChangerMintsModel.Store.cm_sp_is_Customer_Active" />
+    <FunctionImportMapping FunctionImportName="cm_sp_is_Customer_Registered" FunctionName="ChangerMintsModel.Store.cm_sp_is_Customer_Registered" />
+    <FunctionImportMapping FunctionImportName="cm_sp_is_imei_valid" FunctionName="ChangerMintsModel.Store.cm_sp_is_imei_valid" />
+    <FunctionImportMapping FunctionImportName="cm_sp_is_NFC_PIN_Active" FunctionName="ChangerMintsModel.Store.cm_sp_is_NFC_PIN_Active" />
+    <FunctionImportMapping FunctionImportName="cm_sp_is_NFC_PIN_Valid" FunctionName="ChangerMintsModel.Store.cm_sp_is_NFC_PIN_Valid" />
+    <FunctionImportMapping FunctionImportName="cm_sp_register_customer" FunctionName="ChangerMintsModel.Store.cm_sp_register_customer" />
+    <FunctionImportMapping FunctionImportName="cm_sp_send_sms" FunctionName="ChangerMintsModel.Store.cm_sp_send_sms" />
+    <FunctionImportMapping FunctionImportName="cm_sp_unregister_customer" FunctionName="ChangerMintsModel.Store.cm_sp_unregister_customer" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,119 @@
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\bin\Debug\EntityFramework.dll
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\bin\Debug\EntityFramework.xml
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+D:\MyCodes\CMints1\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\bin\Debug\EntityFramework.dll
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+C:\Users\Vamshi\Desktop\ChangerMints\ChangerMints\ChangerMints.Business\bin\Debug\EntityFramework.xml
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\bin\Debug\EntityFramework.dll
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\bin\Debug\EntityFramework.xml
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+D:\MyCodes\CMints\ChangerMints\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.dll
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.xml
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+D:\MyCodes\CMints\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.xml
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.xml
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+D:\ChangerMintsRepo\ChangerMints\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.xml
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.xml
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+C:\Users\Vamshi\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.xml
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.xml
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\NFCTagEntityGenerator.dll
+C:\Users\nipt\Desktop\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\NFCTagEntityGenerator.pdb
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.dll
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.dll
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.xml
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.xml
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.NFCEntitiesGenerator.dll
+D:\Changer Machines\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.NFCEntitiesGenerator.pdb
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.NFCEntitiesGenerator.dll
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.dll
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.dll
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.NFCEntitiesGenerator.pdb
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.xml
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.xml
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+D:\CM\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll.config
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.dll
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Business.pdb
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.dll
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.dll
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.dll
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.Database.pdb
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\ChangerMints.NFCEntitiesGenerator.pdb
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\EntityFramework.xml
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\bin\Debug\log4net.xml
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.csprojResolveAssemblyReference.cache
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.dll
+C:\Personal stuff\Codes\ChangerMintsSoftware\ChangerMints.Business\obj\Debug\ChangerMints.Business.pdb

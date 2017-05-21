@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00D4D060-BBE1-45A0-B86D-6CD2BB98DEE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChangerMints.Business</RootNamespace>
+    <AssemblyName>ChangerMints.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChangerMints.NFCEntitiesGenerator">
+      <HintPath>..\..\ChangerMintsNFCEntitiesGenerator\ChangerMints.NFCEntitiesGenerator\bin\Debug\ChangerMints.NFCEntitiesGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ChangerUtils.cs" />
+    <Compile Include="Common\ChangerValidations.cs" />
+    <Compile Include="Common\ModelResponses.cs" />
+    <Compile Include="IVRSServices\ICustomerRegistration.cs" />
+    <Compile Include="IVRSServices\ICustomerRegistrationService.cs" />
+    <Compile Include="IVRSServices\IRunCustomerRegistration.cs" />
+    <Compile Include="IVRSServices\src\CustomerRegistrationController.cs" />
+    <Compile Include="IVRSServices\src\CustomerRegistrationService.cs" />
+    <Compile Include="IVRSServices\src\RunCustomerRegistration.cs" />
+    <Compile Include="IVRSServices\src\UpdateCustomerDetails.cs" />
+    <Compile Include="Model\ErrorDTO\ErrorManager.cs" />
+    <Compile Include="Model\ErrorDTO\IErrorManager.cs" />
+    <Compile Include="Model\ErrorDTO\LogFiles.cs" />
+    <Compile Include="Model\RequestDTO\ChangerRegistrationRequests.cs" />
+    <Compile Include="Model\RequestDTO\ChangerTerminalRequests.cs" />
+    <Compile Include="Model\RequestDTO\ShopKeeperRegistrationInfo.cs" />
+    <Compile Include="Model\RequestDTO\UpdateShopKeeperDetailsRequest.cs" />
+    <Compile Include="Model\ResponseDTO\ChangerRegistrationResponse.cs" />
+    <Compile Include="Model\ResponseDTO\ChangerTerminalResponses.cs" />
+    <Compile Include="Model\ResponseDTO\ShopkeeperDetailsResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TerminalServices\IRunTerminalTransactions.cs" />
+    <Compile Include="TerminalServices\ITerminalServices.cs" />
+    <Compile Include="TerminalServices\src\RunTerminalTransactions.cs" />
+    <Compile Include="TerminalServices\src\TerminalController.cs" />
+    <Compile Include="TerminalServices\src\TerminalSevices.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChangerMints.Database\ChangerMints.Database.csproj">
+      <Project>{8c22514e-dda8-40b5-a556-bf3cabbab329}</Project>
+      <Name>ChangerMints.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\TransferDTO\" />
+    <Folder Include="SMSServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
